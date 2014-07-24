@@ -1,16 +1,18 @@
 
 <html>
-</style><body><p><strong>Copyright@2014 KenLee All Rights Reserved</strong></p>
+<body><p><strong>Copyright@2014 KenLee All Rights Reserved</strong></p>
 <p>1.根目录其实为</p>
 <pre><code>- /Gridworld Project/GridWorldCode/projects
 </code></pre>
 <p>2.目录结构
-    - firsprohect 为 Part1代码</p>
-<pre><code>- boxBug      为 Part2~Part3代码
+    - firsprohect       为 Part1代码</p>
+<pre><code>- boxBug            为 Part2~Part3代码
 
-- critter     为 Part4代码
+- critter           为 Part4代码
 
-- sparsegrid  为 Part5代码
+- sparsegrid        为 Part5代码
+
+- gridworld.jar     为 原来提供的包
 </code></pre>
 <p>3.每个目录下的说明</p>
 <pre><code>- build.xml         ant执行的build
