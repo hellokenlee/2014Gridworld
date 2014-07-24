@@ -10,7 +10,7 @@
 import java.util.*;
 import info.gridworld.grid.*;
 @SuppressWarnings("unchecked")
-public class SparseBoundedGrid<E> extends AbstractGrid<E>{
+public class SparseBoundedGridLLOC<E> extends AbstractGrid<E>{
 	//node for SparseArray              
 	//Copyright@2014 KenLee All Rights Reserved
     static public class OccupantInCol{
@@ -24,7 +24,7 @@ public class SparseBoundedGrid<E> extends AbstractGrid<E>{
 	private LinkedList[] occupantArray;
 	private int maxCol=0;
 	//gouzao function:)
-	public SparseBoundedGrid(int rows,int cols){
+	public SparseBoundedGridLLOC(int rows,int cols){
 		if (rows <= 0)
             throw new IllegalArgumentException("rows <= 0");
         if (cols <= 0)
@@ -34,7 +34,7 @@ public class SparseBoundedGrid<E> extends AbstractGrid<E>{
         for(int i=0;i<rows;i++){
         	occupantArray[i]=new LinkedList<OccupantInCol>();
         }
-        System.out.println("S.B.G ["+occupantArray.length+"]"+"["+maxCol+"] has been created!");
+        System.out.println("SparseBoundedGridLLOC ["+occupantArray.length+"]"+"["+maxCol+"] has been created!");
 	}
 	public int getNumRows(){
         return occupantArray.length;
@@ -47,8 +47,7 @@ public class SparseBoundedGrid<E> extends AbstractGrid<E>{
         return 0 <= loc.getRow() && loc.getRow() < getNumRows()
                 && 0 <= loc.getCol() && loc.getCol() < getNumCols();
     }
-    public ArrayList<Location> getOccupiedLocations()
-    {
+    public ArrayList<Location> getOccupiedLocations(){
         ArrayList<Location> theLocations = new ArrayList<Location>();
         // if we can find it in our list , it must be occupied,
         // so no need to call get() method

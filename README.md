@@ -1,5 +1,3 @@
-
-<html>
 <body><p><strong>Copyright@2014 KenLee All Rights Reserved</strong></p>
 <p>1.根目录其实为</p>
 <pre><code>- /Gridworld Project/GridWorldCode/projects
@@ -29,4 +27,7 @@
 - 把你的测试代码写到TestRunner.java
 
 - 执行 ant 会自动编译运行
-</code></pre></body></html>
+</code></pre>
+<p>ps. 其中sparseGrid/src中</p>
+<p>SGN,LLOC,HM,TM分别对应要求的SparseGridNode version，LinkedList<OccupantInCol> version,HashMap version,TreeMap version
+(TM才不是提莫呢！哼！)</p></body>
