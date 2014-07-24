@@ -1,0 +1,26 @@
+<?xmll version="1.0"?>
+<project name="test" default="run">
+	<target name="clean">
+		<delete dir="bin" includes="*.class"/>
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="bin"/>
+		<javac  srcdir="./" destdir="./bin">
+			<classpath>
+             	<pathelement path="./../gridworld.jar"/>
+           	</classpath>
+		</javac>
+	</target>
+	
+	<target name="run" depends="compile">
+		<!--<exec command="java -classpath ./bin/:./gridworld.jar MyRunner "  failonerror="false"/> -->
+		<java classname = "TestRunner" fork="true">
+			<classpath>
+				<pathelement path="./bin"/>
+				<pathelement path="./../gridworld.jar"/>
+			</classpath>
+		</java>
+	</target>
+	
+</project>
