@@ -30,4 +30,8 @@
 </code></pre>
 <p>ps. 其中sparseGrid/src中</p>
 <p>SGN,LLOC,HM,TM分别对应要求的SparseGridNode version，LinkedList<OccupantInCol> version,HashMap version,TreeMap version
-(TM才不是提莫呢！哼！)</p></body>
+(TM才不是提莫呢！哼！)</p>
+<p>ps2. 其中mazeBug/中,ant使用的jar包是mazeBug/gridworld.jar,是经过修改,改动了info/gridworld/gui 的"WorldFrame.java"和
+"WorldFrameResources.properties"两个文件的jar,为了添加菜单栏的map 选项。在这个项目中,不需要写TestRunner,直接ant运行即可。
+预设的地图存在./mazeBug/maps中
+</p></body>
