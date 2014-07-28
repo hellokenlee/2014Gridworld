@@ -5,6 +5,7 @@ import info.gridworld.grid.Location;
 import info.gridworld.actor.Critter;
 import info.gridworld.actor.Rock;
 import info.gridworld.actor.Flower;
+import info.gridworld.actor.*;
 /**
 * This class runs a world with additional grid choices.
 */
@@ -17,7 +18,8 @@ public class TestRunner
     world.addGridClass("SparseBoundedGridSGN");
     world.addGridClass("SparseBoundedGridHM");
     world.addGridClass("SparseBoundedGridTM");
-    world.add(new Location(7, 8),new Rock());
+    world.addGridClass("SparseUnboundedGridHM");
+    world.add(new Location(9, 9),new Bug());
     world.show();
   }
 }
