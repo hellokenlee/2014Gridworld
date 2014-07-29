@@ -95,7 +95,7 @@ public class SparseBoundedGridSGN<E> extends AbstractGrid<E>{
         while(it.next!=null){
         	it=it.next;
         }
-        occupantArray[loc.getRow()]=new SparseGridNode(obj,loc.getCol(),null);
+        it.next=new SparseGridNode(obj,loc.getCol(),null);
         return oldOccupant;
     }
     public E remove(Location loc)
